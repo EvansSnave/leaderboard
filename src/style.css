@@ -1,4 +1,29 @@
-.hello {
+/* .hello {
   color: red;
   background: url('./assets/todo.png');
+} */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.main {
+  margin: calc(2vh + 1px);
+}
+
+.main__child {
+  display: flex;
+}
+
+.form__child {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-container__child {
+  display: flex;
 }
