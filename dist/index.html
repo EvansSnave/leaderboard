@@ -4,29 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaderboard</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
 <script defer src="runtime.js"></script><script defer src="main.js"></script></head>
 <body>
     <main>
-        <section>
-            <h1>Leaderboard</h1>
-            <div>
-                <div>
-                    <div>
-                        <h2>Recent scores</h2>
-                        <button>Refresh</button>
+        <section class="main">
+            <h1 class="main__title">Leaderboard</h1>
+            <div class="main__child">
+                <div class="main__table-container">
+                    <div class="table-container__child">
+                        <h2 class="table-container__title">Recent scores</h2>
+                        <button class="table-container__button">Refresh</button>
                     </div>
-                    <div>
-                        <table></table>
-                    </div>
+                    <table class="table-container__table">
+                        <tbody>
+                            <tr>
+                                <th>Kevin</th>
+                                <th>9999</th>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <form action="">
-                    <p>Add your score</p>
-                    <input type="text" placeholder="Your name">
-                    <input type="text" placeholder="Your score">
-                    <button>Submit</button>
+                <form class="main__form" action="">
+                    <p class="form__title">Add your score</p>
+                    <div class="form__child">
+                        <input type="text" placeholder="Your name" class="form__name">
+                        <input type="text" placeholder="Your score" class="form__score">
+                        <button class="form__button">Submit</button>
+                    </div>
                 </form>
             </div>
         </section>
     </main>
+    <script src="./index.js" type="module"></script>
 </body>
 </html>
