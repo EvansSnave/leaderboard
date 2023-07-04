@@ -2,6 +2,7 @@
   color: red;
   background: url('./assets/todo.png');
 } */
+/* stylelint-disable csstree/validator */
 * {
   padding: 0;
   margin: 0;
