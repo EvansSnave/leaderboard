@@ -148,6 +148,6 @@ I also aknowledge to Cindy Shin who is the author of the original design https:/
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/EvansSnave/leaderboard/blob/structure/README.md) licensed.
+This project is [MIT](https://github.com/EvansSnave/leaderboard/blob/structure/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
