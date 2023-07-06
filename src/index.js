@@ -1,5 +1,6 @@
 // import _ from 'lodash';
 import './style.css';
+import { generateID } from './modules/gameID.js';
 // import todo from './assets/todo.png';
 // function component() {
 //   const element = document.createElement('div');
@@ -13,3 +14,5 @@ import './style.css';
 //   return element;
 // }
 // document.body.appendChild(component());
+
+generateID();
