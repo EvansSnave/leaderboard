@@ -11,7 +11,7 @@ export const generateID = async () => {
       })
     }
     );
-    if (!fetching.ok) throw new Error('Cannot create new game');
+    if (fetching.ok !== true) throw new Error('Cannot create new game');
     const response = await fetching.json();
     const identification = response.result.split(': ')[1].replace('added.', '');
     localStorage.setItem('GameID', identification);

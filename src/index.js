@@ -1,18 +1,19 @@
-// import _ from 'lodash';
 import './style.css';
 import { generateID } from './modules/gameID.js';
-// import todo from './assets/todo.png';
-// function component() {
-//   const element = document.createElement('div');
-//   // Lodash, currently included via a script, is required for this line to work
-//   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-//   element.classList.add('hello');
-//     // Add the image to our existing div.
-//     const myIcon = new Image();
-//     myIcon.src = todo;
-//     element.appendChild(myIcon);
-//   return element;
-// }
-// document.body.appendChild(component());
+import { refresh } from './modules/showScores.js'
+import { submit } from './modules/inputPlayer.js';
 
-generateID();
+//Making sure the ID does not change once we have it.
+if (window.localStorage.length == 0) {
+  await generateID();
+};
+
+//Prevent reload when submitting scores.
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.querySelector('form');
+  form.addEventListener('click', (e) => {
+    e.preventDefault();
+  });
+  refresh();
+  submit();
+});
