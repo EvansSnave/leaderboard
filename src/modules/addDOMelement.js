@@ -1,7 +1,10 @@
-import { loadScores } from './createHTML.js';
+import loadScores from './createHTML.js';
+/* eslint-disable arrow-parens */
 
-export const rowDOM = (table, arrayObjects) => {
-  arrayObjects.forEach( object => {
+const rowDOM = (table, arrayObjects) => {
+  arrayObjects.forEach(object => {
     table.innerHTML += loadScores(object);
   });
 };
+
+export default rowDOM;
