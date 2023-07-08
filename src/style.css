@@ -1,4 +1,65 @@
-.hello {
-  color: red;
-  background: url('./assets/todo.png');
+/* stylelint-disable csstree/validator */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-size: clamp(2vh + 1px, 1.8vw + 1px, 2vw + 1px);
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.main {
+  margin: calc(2vw + 1px);
+}
+
+.main__child {
+  display: flex;
+  margin: clamp(1vw + 1px, 2vw + 1px, 2.5vw + 1px);
+}
+
+.main__title {
+  font-size: clamp(3vh + 1px, 3.2vw + 1px, 4vw + 1px);
+}
+
+.form__child {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-container__child {
+  display: flex;
+  margin-bottom: clamp(1vw + 1px, 2vw + 1px, 2.5vw + 1px);
+}
+
+.main__table-container {
+  margin-right: clamp(3vw + 1px, 5vw + 1px, 6vw + 1px);
+}
+
+.table-container__table {
+  border: black 1px solid;
+  width: 100%;
+}
+
+.table-container__title {
+  margin-right: clamp(1vw + 1px, 2vw + 1px, 2.5vw + 1px);
+}
+
+input,
+.form__button {
+  margin-top: calc(2vw + 1px);
+}
+
+.form__button {
+  width: fit-content;
+  align-self: flex-end;
 }
