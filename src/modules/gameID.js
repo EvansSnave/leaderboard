@@ -14,6 +14,7 @@ const generateID = async () => {
     const response = await fetching.json();
     const identification = response.result.split(': ')[1].replace('added.', '');
     localStorage.setItem('GameID', identification);
+    console.log(identification)
   } catch (error) {
     throw new Error(`Cannot create a new game ${error}`);
   }

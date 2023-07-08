@@ -5,7 +5,7 @@ import submit from './modules/inputPlayer.js';
 
 // Making sure the ID does not change once we have it.
 
-if (window.localStorage.length === 0) {
+if (!window.localStorage.getItem('GameID')) {
   await generateID();
 }
 
